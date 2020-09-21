@@ -1,0 +1,46 @@
+
+.Main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
+    grid-gap: 10px;
+    background-color: blueviolet;
+    grid-template-areas:
+            "albimg1 ad1 ad1 ad1 ad1 ad1 ad1 ad1 albimg1"
+            "albimg2 ad1 ad1 ad1 ad1 ad1 ad1 ad1 albimg2";
+}
+
+
+/*    "alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1"
+    "alb-img-2 alb-img-1 alb-img-2 video video video alb-img-2 alb-img-1 alb-img-2"
+    "alb-img-1 alb-img-2 alb-img-1 albimg2 albimg1 albimg2 alb-img-1 alb-img-2 alb-img-1"
+    "alb-img-2 alb-img-1 alb-img-2 video video video alb-img-2 alb-img-1 alb-img-2"
+    "alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1"
+    "alb-img-2 ad2 ad1 ad1 ad1 ad1 ad1 ad2 alb-img-2"
+    "alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1 alb-img-2 alb-img-1"; */
+.albimg {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.albimg1 {
+    grid-area: albimg1;
+}
+
+.albimg2 {
+    grid-area: albimg2;
+}
+/*
+.ad1 {
+    grid-area: ad1;
+    background-color: white;
+}
+
+.ad2 {
+    grid-area: ad2;
+}
+/
+.video {
+    grid-area: video;
+} */
